@@ -1,6 +1,4 @@
-# 283Assignment2
-
-## Assignment2
+# Assignment2
 
 - For CPUID leaf node %eax=0x4FFFFFFF:
   - Return the total number of exits (all types) in %eax
