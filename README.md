@@ -23,10 +23,10 @@
 
 6.Search and download the corresponding os file.
 
-7.You can use virt-manager install and run your nested vm, steps [here](https://www.how2shout.com/how-to/qemu-ubuntu-tutorial.html).
+7.You can use virt-manager to install and run your nested vm, steps [here](https://www.how2shout.com/how-to/qemu-ubuntu-tutorial.html).
 
 8.I ran nested vm on qemu directly, stpes [here](https://techpiezo.com/linux/setup-virtual-machine-using-qemu-in-ubuntu/).
 
-9.Inside of the nested vm, install cpuid package "sudo apt install cpuid"
+9.Inside of the nested vm, install cpuid package `sudo apt install cpuid`.
 
-10.Check the result by calling `cpuid -l 0x4FFFFFFF` and `cpuid -l -x4FFFFFFE`.
+10.Check the result.
