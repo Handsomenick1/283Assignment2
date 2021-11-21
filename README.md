@@ -17,7 +17,7 @@
 
 3.Go to */linux/arch/x86/kvm/cpuid.c* , add some code for the 0x4FFFFFFF and 0x4FFFFFFE, save it.
 
-4.For Intel cpu, go to */linux/arch/x86/kvm/vmx/vmx.c*, add soem code in the function `__vmx_handle_exit`, save it.
+4.For Intel cpu, go to */linux/arch/x86/kvm/vmx/vmx.c*, add some code to the function `__vmx_handle_exit`, save it.
 
 5.Call `sudo make -j cpu-core modules && sudo make INSTALL_MOD_STRIP=1 modules_install && sudo reboot` to rebuild, install and rebootkernel.
 
