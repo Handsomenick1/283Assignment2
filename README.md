@@ -1,5 +1,14 @@
 # 283Assignment2
 
+## Assignment2
+
+•For CPUID leaf node %eax=0x4FFFFFFF:
+  ◦Return the total number of exits (all types) in %eax
+•For CPUID leaf node %eax=0x4FFFFFFE:
+  ◦Return the high 32 bits of the total time spent processing all exits in %ebx
+  ◦Return the low 32 bits of the total time spent processing all exits in %ecx
+    ▪%ebx and %ecx return values are measured in processor cycles, across all VCPUs
+
 ## Steps
 
 1.Continue to use the Linux from Assignment1.
