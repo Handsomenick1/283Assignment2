@@ -5929,8 +5929,10 @@ static int __vmx_handle_exit(struct kvm_vcpu *vcpu, fastpath_t exit_fastpath)
 		 * PML is never enabled when running L2, bail immediately if a
 		 * PML full exit occurs as something is horribly wrong.
 		 */
-		if (exit_reason.basic == EXIT_REASON_PML_FULL)
+		if (exit_reason.basic == EXIT_REASON_PML_FULL){
+			total_time  += rdtsc() - start_time;
 			goto unexpected_vmexit;
+		}
 
 		/*
 		 * The host physical addresses of some pages of guest memory
